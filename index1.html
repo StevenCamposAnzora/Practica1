@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica_1</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header, nav, main, footer{
+            padding: 15px;
+        }
+
+        header{
+            background: #9e6464;
+            color: white;
+            text-align: center;
+        }
+
+        nav{
+            background: #eee;
+            text-align: center;
+        }
+
+        nav a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #b12222;
+        }
+
+        nav a:hover{
+            background: #23884a;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        footer{
+            background: #721e1e;
+            color: white;
+            text-align: center;
+        }
+
+       
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .col{
+            background: #f6f6f6;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .col img{
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        
+        @media (max-width: 600px){
+            .contenedor{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Comidas y bebidas</h1>
+    <p>Las mejores comidas del mundo</p>
+</header>
+
+<nav>
+    <a href="#">Comidas</a>
+    <a href="#">Bebidas</a>
+</nav>
+
+<main>
+    <div class="contenedor">
+
+        <section class="col">
+            <h2>Hamburguesa</h2>
+            <p>Deliciosa hamburguesa clásica.</p>
+            <img src="https://media.a24.com/p/c44532d0231f4067ea22e0feb14f9298/adjuntos/296/imagenes/009/153/0009153808/1200x675/smart/hamburguesas-caseras-receta-el-secreto-tocar-el-cielo-las-manos.png">
+        </section>
+
+        <section class="col">
+            <h2>Papas Fritas</h2>
+            <p>Crujientes y doradas.</p>
+            <img src="https://recetassinsecretos.com/wp-content/uploads/2023/06/Batata-Frita-Sequinha-com-Queijo-e-Calabresa-1.webp">
+        </section>
+
+        <section class="col">
+            <h2>Tacos</h2>
+            <p>Tacos tradicionales.</p>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Njy-lLsZNZEOaPu-sKcysAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+        </section>
+
+        <section class="col">
+            <h2>Pupusas</h2>
+            <p>Comida típica salvadoreña.</p>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.KBqTHyalTSea5R1yqU0y-wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+        </section>
+
+        <section class="col">
+            <h2>Pizza</h2>
+            <p>Pizza italiana.</p>
+            <img src="https://newcoach2012.net/wp-content/uploads/2021/10/italia-pizza-aurelien-lemasson-unsplash.jpg">
+        </section>
+
+        <section class="col">
+            <h2>Lasaña</h2>
+            <p>Lasaña casera.</p>
+            <img src="https://www.mundodeportivo.com/us/uploads/2024/12/20/6765e51d90f2a.jpeg">
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Comidas y bebidas</p>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tercera página web responsive</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        header, nav, main, footer{
+            padding: 15px;
+        }
+
+        header{
+            background: rgb(31, 29, 29);
+            color: white;
+        }
+
+        nav{
+            background: rgb(184, 177, 177);
+        }
+
+        nav a{
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 8px 10px;
+            text-decoration: none;
+            color: rgb(3, 4, 20);
+            border: 1px solid rgb(202, 195, 195);
+        }
+
+        footer{
+            background: rgb(8, 5, 20);
+            color: white;
+            text-align: center;
+        }
+
+        .wrap{
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* FLEX PARA LAS SECCIONES */
+        main .wrap{
+            display: flex;
+            gap: 20px;
+        }
+
+        .caja{
+            background: wheat;
+            border: 1px solid whitesmoke;
+            padding: 15px;
+            flex: 1;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px){
+            main .wrap{
+                flex-direction: column;
+            }
+        }
+     
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap">
+            <h1>Mi web responsive - Steven Campos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est saepe neque iste reprehenderit officiis dolores pariatur mollitia consequuntur.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrap">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Galería</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrap">
+            <section class="caja">
+                <h2>Sección A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente sit sed?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum temporibus.</p>
+                <img src="https://i.pinimg.com/originals/64/ac/f9/64acf9eadc3cce114a69990c26e710ba.jpg">
+            </section>
+
+            <section class="caja">
+                <h2>Sección B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente sit sed?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum temporibus.</p>
+                 <img src="https://i.pinimg.com/originals/64/ac/f9/64acf9eadc3cce114a69990c26e710ba.jpg">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p>&copy; 2026 - Ejemplo básico de responsive</p>
+        </div>
+    </footer>
+
+</body>
+</html>
